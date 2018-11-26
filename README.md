@@ -2,7 +2,7 @@
 Demonstration on Q-learning
 
 
-#Step 1:
+# Step 1:
 Import libraries, here we use 3 libraries:
 Numpy: for our Qtable OpenAI Gym: for FrozenLake environment Random: to generate random numbers
 
@@ -10,7 +10,7 @@ import numpy as np
 import gym
 import random
 
-#Step 2:
+# Step 2:
 
  Create the environment
 
@@ -20,7 +20,7 @@ import random
 
 env = gym.make("FrozenLake-v0")
 
-#Step 3:
+# Step 3:
 
 Create the Q-table and initialize it
 
@@ -32,7 +32,7 @@ state_size = env.observation_space.n
 qtable = np.zeros((state_size, action_size))
 print(qtable)
 
-Step 4:
+# Step 4:
 
 Create the hyperparameters
 
@@ -46,9 +46,8 @@ max_steps = 99                # Max steps per episode
 
 gamma = 0.95                  # Discounting rate
 
-​
 
-# Exploration parameters
+#Exploration parameters
 
 epsilon = 1.0                 # Exploration rate
 
@@ -58,7 +57,7 @@ min_epsilon = 0.01            # Minimum exploration probability
 
 decay_rate = 0.005             # Exponential decay rate for exploration prob
 
-Step 5:
+# Step 5:
 
 The Q learning algorithm
 
